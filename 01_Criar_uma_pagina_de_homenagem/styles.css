@@ -11,7 +11,6 @@
 main {
   width: 99%;
   height: 100%;
-
   border-radius: 7px;
   margin: 25px auto;
   display: flex;
@@ -38,8 +37,14 @@ main {
   padding-bottom: 15px;
 }
 
+img {
+  display: block;
+}
+
 #image {
-  width: 60%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 #img-div {
@@ -58,7 +63,7 @@ main {
   padding: 15px 15px;
 }
 
-#description {
+#tribute-info {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,8 +79,31 @@ main {
   padding-bottom: 25px;
 }
 
+#list-description li:nth-last-child(1) {
+  padding-bottom: 50px;
+}
+
 #title-description {
   font-weight: 700;
   font-size: 1.1em;
   padding: 50px 0;
+}
+
+#quote {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: justify;
+  padding-bottom: 50px;
+  font-style: italic;
+}
+
+#quote cite {
+  padding-top: 20px;
+}
+
+#footer-description {
+  font-size: 1.15em;
+  font-weight: 700;
+  padding-bottom: 35px;
 }
