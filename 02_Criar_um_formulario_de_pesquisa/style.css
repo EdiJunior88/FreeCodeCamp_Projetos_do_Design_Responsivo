@@ -1,0 +1,25 @@
+@import url("https://use.typekit.net/kyz6kio.css");
+
+* {
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+#title {
+  text-align: center;
+  font-size: 1.26em;
+  font-weight: 600;
+}
+
+#survey-form {
+  display: flex;
+  background: #1b1b32cc;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  align-content: center;
+}

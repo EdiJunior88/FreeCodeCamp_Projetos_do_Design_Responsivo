@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>freeCodeCamp Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">freeCodeCamp Formulário de Pesquisa</h1>
+  <p>Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
+
+  <form id="survey-form">
+    <label for="name-label">Nome</label>
+    <input type="text" name="name" id="name" placeholder="Digite seu nome">
+
+    <label for="email-label">Email</label>
+    <input type="email" name="email" id="email" placeholder="Digite seu email">
+
+    <label for="number-label">Idade(Opcional)</label>
+    <input type="number" name="number" id="number" placeholder="Idade" min="0" max="100">
+
+    <p>Qual opção melhor descreve sua função atual?</p>
+    <select name="select" id="dropdown">
+      <option value="selecione" disabled selected>Selecione a função atual</option>
+      <option value="estudante">Estudante</option>
+      <option value="integral">Trabalho em tempo integral</option>
+      <option value="aprendiz">Aprendiz em tempo integral</option>
+      <option value="nao-dizer">Prefiro não dizer</option>
+      <option value="outros">Outros</option>
+    </select>
+
+    <p>Você recomendaria freeCodeCamp para um amigo?</p>
+    <label for="definitivamente">
+      <input type="radio" name="recomendacao" id="definitivamente" value="definitivamente" checked>
+      Definitivamente
+    </label>
+
+    <label for="talvez">
+      <input type="radio" name="recomendacao" id="talvez" value="talvez">
+      Talvez
+    </label>
+
+    <label for="nao-tem-certeza">
+      <input type="radio" name="recomendacao" id="nao-tem-certeza" value="nao-tem-certeza">
+      Não tem certeza
+    </label>
+
+    <p>Qual é o seu recurso favorito do freeCodeCamp?</p>
+    <select name="select" id="dropdown">
+      <option value="selecione" disabled selected>Selecione uma opção</option>
+      <option value="estudante">Desafios</option>
+      <option value="integral">Projetos</option>
+      <option value="aprendiz">Comunidade</option>
+      <option value="nao-dizer">Código Aberto</option>
+    </select>
+
+    <p>O que você gostaria de ver melhorado? (Verifique tudo o que se aplica)</p>
+    <label for="front-end">
+      <input type="checkbox" name="melhoria" id="front-end" value="front-end">
+      Projetos front-end
+    </label>
+
+    <label for="back-end">
+      <input type="checkbox" name="melhoria" id="back-end" value="back-end">
+      Projetos back-end
+    </label>
+
+    <label for="visualizacoes">
+      <input type="checkbox" name="melhoria" id="visualizacoes" value="visualizacoes">
+      Visualizações de dados
+    </label>
+
+    <label for="desafios">
+      <input type="checkbox" name="melhoria" id="desafios" value="desafios">
+      Desafios
+    </label>
+
+    <label for="comunidade">
+      <input type="checkbox" name="melhoria" id="comunidade" value="comunidade">
+      Comunidade de Código Aberto
+    </label>
+
+    <label for="salas">
+      <input type="checkbox" name="melhoria" id="salas" value="salas">
+      Salas de ajuda Gitter
+    </label>
+
+    <label for="videos">
+      <input type="checkbox" name="melhoria" id="videos" value="videos">
+      Vídeos
+    </label>
+
+    <label for="encontros">
+      <input type="checkbox" name="melhoria" id="encontros" value="encontros">
+      Encontros da Cidade
+    </label>
+
+    <label for="wiki">
+      <input type="checkbox" name="melhoria" id="wiki" value="wiki">
+      Wiki
+    </label>
+
+    <label for="forum">
+      <input type="checkbox" name="melhoria" id="forum" value="forum">
+      Fórum
+    </label>
+
+    <label for="cursos">
+      <input type="checkbox" name="melhoria" id="cursos" value="cursos">
+      Cursos adicionais
+    </label>
+
+    <label for="">Algum comentário ou sugestão?</label>
+    <textarea name="" id="" cols="30" rows="10">insira seu comentário aqui...</textarea>
+
+    <button type="submit" id="submit">Enviar</button>
+  </form>
+</body>
+
+</html>
