@@ -28,6 +28,20 @@ h1, p, label {
   text-align: center;
 }
 
+#title {
+  padding-top: 60px;
+  padding-bottom: 12px;
+  font-weight: 400;
+}
+
+#subtitle {
+  font-weight: 200;
+  font-size: 1.15em;
+  font-style: italic;
+  line-height: 1.5em;
+  padding-bottom: 20px;
+}
+
 #container-form {
   display: flex;
   justify-content: center;
@@ -42,9 +56,9 @@ h1, p, label {
   justify-content: center;
   align-content: center;
   padding: 30px 35px;
-  width: 60%;
+  width: 70%;
   border-radius: 5px;
-  background: rgb(70, 70, 23);
+  background: rgba(37, 41, 77, 0.829);
 }
 
 .form {
