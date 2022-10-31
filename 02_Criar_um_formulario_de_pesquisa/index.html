@@ -5,29 +5,29 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styles.css">
   <title>freeCodeCamp Survey Form</title>
 </head>
 
 <body>
   <div id="container">
     <h1 id="title">freeCodeCamp Formulário de Pesquisa</h1>
-    <p id="subtitle">Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
+    <p id="description">Obrigado por dedicar seu tempo para nos ajudar a melhorar a plataforma</p>
 
     <div id="container-form">
       <form id="survey-form">
         <div class="form">
-          <label for="name-label">Nome</label>
-          <input type="text" name="name" id="name" placeholder="Digite seu nome">
+          <label for="name-label" id="name-label">Nome</label>
+          <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
         </div>
 
         <div class="form">
-          <label for="email-label">Email</label>
-          <input type="email" name="email" id="email" placeholder="Digite seu email">
+          <label for="email-label" id="email-label">Email</label>
+          <input type="email" name="email" id="email" placeholder="Digite seu email" required>
         </div>
 
         <div class="form">
-          <label for="number-label">Idade(Opcional)</label>
+          <label for="number-label" id="number-label">Idade(Opcional)</label>
           <input type="number" name="number" id="number" placeholder="Idade" min="0" max="100">
         </div>
 

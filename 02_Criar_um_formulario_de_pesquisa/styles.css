@@ -24,7 +24,7 @@ h1, p, label {
   background: rgba(58, 53, 158, 0.8);
 }
 
-#title, #subtitle {
+#title, #description {
   text-align: center;
 }
 
@@ -34,7 +34,7 @@ h1, p, label {
   font-weight: 400;
 }
 
-#subtitle {
+#description {
   font-weight: 200;
   font-size: 1.15em;
   font-style: italic;
@@ -56,7 +56,7 @@ h1, p, label {
   justify-content: center;
   align-content: center;
   padding: 30px 35px;
-  width: 70%;
+  width: auto;
   border-radius: 5px;
   background: rgba(37, 41, 77, 0.829);
 }
