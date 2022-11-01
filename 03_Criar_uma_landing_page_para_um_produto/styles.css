@@ -40,10 +40,6 @@ body {
   width: 14vw;
 }
 
-/* .nav-link:nth-child(2) {
-  padding: 0 20px;
-} */
-
 #nav-bar > ul > .nav-link > a {
   text-decoration: none;
 }
@@ -75,4 +71,35 @@ body {
   font-weight: 900;
   background: #f1cf0c;
   border: none;
+}
+
+#description {
+  display: flex;
+  justify-content: center;
+}
+
+#description-icon {
+  display: flex;
+  align-items: center;
+  padding-right: 80px;
+}
+
+.fa-solid {
+  font-size: 3em;
+  color: #ff7b00;
+}
+
+#description-text {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  word-wrap: break-word;
+  max-width: 55%;
+}
+
+.text1 {
+  font-size: 1.5em;
+  font-weight: bolder;
 }
