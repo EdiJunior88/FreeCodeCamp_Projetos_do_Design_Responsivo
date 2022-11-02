@@ -29,6 +29,7 @@ body {
 
 #header-img {
   width: 300px;
+  cursor: pointer;
 }
 
 #nav-bar > ul {
