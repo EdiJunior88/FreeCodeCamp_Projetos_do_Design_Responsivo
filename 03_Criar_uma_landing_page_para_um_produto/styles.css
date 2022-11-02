@@ -131,6 +131,7 @@ body {
   border: 1px solid #000;
   text-align: center;
   border-radius: 3px;
+  width: 290px;
 }
 
 #price:nth-child(2) {
@@ -138,10 +139,10 @@ body {
 }
 
 .price-title {
-  background: #cccccc;
+  background: #ccc;
   font-weight: bolder;
-  font-size: 0.9em;
-  padding: 10px 70px;
+  font-size: 1em;
+  padding: 15px 0;
 }
 
 .price-value {
@@ -162,4 +163,46 @@ body {
   border: none;
   padding: 10px 20px;
   font-size: 1.09em;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  max-width: 930px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 30px;
+  background: #ccc;
+}
+
+#container-footer {
+  padding: 17px 0;
+}
+
+#footer-links,
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  padding-bottom: 5px;
+}
+
+#footer-links,
+a {
+  text-decoration: none;
+}
+
+#footer-links > ul > li:nth-child(2) {
+  padding: 0 20px;
+}
+
+#footer-copyright >
+p {
+  color: #535353;
+  font-size: 0.89em;
+  text-align: right;
 }
