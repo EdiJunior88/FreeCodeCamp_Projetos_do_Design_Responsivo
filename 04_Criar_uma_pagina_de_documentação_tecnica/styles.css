@@ -21,27 +21,38 @@ body {
   align-items: stretch;
 }
 
-/*---------- Menu Lateral -----------*/
+/*---------- Menu Lateral (Vertical) -----------*/
 
 #navbar {
   position: fixed;
   border-right: 2px solid black;
   width: 300px;
-  padding-left: 40px;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 #navbar > header {
   font-size: 1.6em;
   font-weight: 600;
+  padding: 20px;
+  border: 1px solid #000;
+  border-width: 0 0 1px 0;
 }
 
 #navbar > ul > li {
   list-style: none;
+  border: 1px solid #000;
+  border-width: 0 0 1px 0;
+  padding: 20px;
 }
 
 .nav-link {
   text-decoration: none;
 }
+
+/*----------------------------------*/
 
 #main-doc {
   position: absolute;
