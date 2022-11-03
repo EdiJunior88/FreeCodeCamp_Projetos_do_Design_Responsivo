@@ -45,7 +45,7 @@ body {
   list-style: none;
   border: 1px solid #000;
   border-width: 0 0 1px 0;
-  padding: 20px;
+  padding: 12px 0 12px 30px;
 }
 
 .nav-link {
@@ -57,4 +57,37 @@ body {
 #main-doc {
   position: absolute;
   margin-left: 340px;
+}
+
+.main-section > header {
+  font-size: 1.6em;
+  font-weight: 500;
+  padding: 10px 0;
+}
+
+#introduction > header {
+  padding-top: 30px;
+}
+
+article {
+  width: 95%;
+}
+
+.main-section > article > p {
+  padding: 9px 0 9px 20px;
+  color: blue;
+}
+
+.main-section > article > ul > li {
+  padding: 9px 0 9px 0;
+  color: red;
+  margin-left: 80px;
+  font-size: 0.95em;
+  text-align: justify;
+}
+
+p {
+  font-size: 0.95em;
+  line-height: 1.3em;
+  text-align: justify;
 }
