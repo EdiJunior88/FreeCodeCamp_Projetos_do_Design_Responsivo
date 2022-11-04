@@ -104,11 +104,13 @@ code {
   display: block;
   text-align: left;
   white-space: pre-line;
-  background: #ecebeb;
+  background: #f0efef;
   line-height: 2em;
   font-size: 0.8em;
-  font-family:;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   padding: 10px 20px;
+  margin: 10px 20px;
+  color: #414141;
 }
 
 /*---------- Media Query 800px -----------*/
