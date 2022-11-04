@@ -27,7 +27,7 @@
       <li><a href="#Constants" class="nav-link">Constantes</a></li>
       <li><a href="#Data_types" class="nav-link">Tipos de dados</a></li>
       <li><a href="#if...else_statement" class="nav-link">se... outra declaração</a></li>
-      <li><a href="#while_statement" class="nav-link">enquanto a declaração</a></li>
+      <li><a href="#while_statement" class="nav-link">enquanto... como declaração</a></li>
       <li><a href="#Function_declarations" class="nav-link">Declarações de função</a></li>
       <li><a href="#Reference" class="nav-link">Referência</a></li>
     </ul>
@@ -243,70 +243,115 @@
     </section>
 
     <section class="main-section" id="if...else_statement">
-      <header>JavaScript e Java</header>
+      <header>se... outra declaração</header>
       <article>
         <p>
-          JavaScript e Java são semelhantes em alguns aspectos, mas fundamentalmente diferente em alguns outros. A linguagem JavaScript se assemelha a Java, mas não tem digitação estática de Java e verificação de tipo forte. JavaScript segue a maior parte da sintaxe de expressão Java, nomeando convenções e construções básicas de fluxo de controle, que foi a razão pela qual foi renomeado de LiveScript para JavaScript.
+          Use a instrução if para executar uma declaração se uma condição lógica for verdadeiro. Use a cláusula opcional para executar uma declaração se o condição é falsa. Uma declaração se parece da seguinte forma:condição pode ser qualquer expressão que avalia para verdadeiro ou falso. Ver Booleano para uma explicação do que avalia a verdade e falso. Se condição avalia a verdade, statement_1 é executado; caso contrário statement_2 é executado. statement_1 e statement_2 podem ser qualquer declaração, incluindo mais aninhado se declarações.
         </p>
 
-        <p>
-          Em contraste com o sistema de tempo de compilação de Java de classes construídas por declarações, JavaScript suporta um sistema de tempo de execução baseado em um pequeno número de tipos de dados representando numérico, booleano e string Valores. JavaScript tem um modelo de objeto baseado em protótipo em vez do modelo de objeto mais comum baseado em classe. O modelo baseado em protótipos fornece herança dinâmica; ou seja, o que é herdado pode variar para objetos individuais. JavaScript também suporta funções sem quaisquer requisitos declarativos especiais. Funções podem ser propriedades de objetos, executando como métodos vagamente digitado.
-        </p>
+        <code>if (condition) { statement_1; } else { statement_2; }</code>
 
         <p>
-          JavaScript é uma linguagem muito livre em comparação com Java. Você não. tem que declarar todas as variáveis, classes e métodos. Você não tem para se preocupar se os métodos são públicos, privados ou protegido, e você não precisa implementar interfaces. Variáveis parâmetros e tipos de retorno de função não são explicitamente digitados.
+          Você também pode compor as declarações usando outra vez se tiver vários condições testadas em sequência, da seguinte forma:
         </p>
+
+        <code>if (condition_1) { statement_1; } else if (condition_2) {
+          statement_2; } else if (condition_n) { statement_n; } else {
+          statement_last; }</code>
+
+        <p>
+          No caso de múltiplas condições apenas a primeira condição lógica que avalia a verdade será executado. Para executar múltiplos declarações, agrupa-as dentro de uma declaração de bloco ({ ... } ) . Em geral, é uma boa prática sempre usar declarações de bloco, especialmente ao aninhar se declarações:É aconselhável não usar atribuições simples em um condicional expressão, porque a atribuição pode ser confundida com igualdade quando olhando sobre o código. Por exemplo, não use o seguinte código:Se você precisar usar uma atribuição em uma expressão condicional, uma prática comum é colocar parênteses adicionais em torno da tarefa. Por exemplo:
+        </p>
+
+        <code>if (condition) { statement_1_runs_if_condition_is_true;
+          statement_2_runs_if_condition_is_true; } else {
+          statement_3_runs_if_condition_is_false;
+          statement_4_runs_if_condition_is_false; }</code>
+
+        <code>if (x = y) { /* statements here */ }</code>
+
+        <code>if ((x = y)) { /* statements here */ }</code>
       </article>
     </section>
 
     <section class="main-section" id="while_statement">
-      <header>JavaScript e Java</header>
+      <header>enquanto... como declaração</header>
       <article>
         <p>
-          JavaScript e Java são semelhantes em alguns aspectos, mas fundamentalmente diferente em alguns outros. A linguagem JavaScript se assemelha a Java, mas não tem digitação estática de Java e verificação de tipo forte. JavaScript segue a maior parte da sintaxe de expressão Java, nomeando convenções e construções básicas de fluxo de controle, que foi a razão pela qual foi renomeado de LiveScript para JavaScript.
+          Uma declaração de while executa suas declarações, desde que uma especificada condição avalia a verdade. Uma declaração de enquanto parece o seguinte:Se a condição se torna falso, declaração dentro do loop pára de executar e controlar passes para a declaração após o loop.
+        </p>
+
+        <code>while (condition) statement</code>
+
+        <p>
+          O teste de condição ocorre antes da instrução no loop ser executada. Se a condição retorna verdadeiro, a declaração é executada e o condição é testada novamente. Se a condição der falso, execução pára e o controle é passado para a declaração seguinte.
         </p>
 
         <p>
-          Em contraste com o sistema de tempo de compilação de Java de classes construídas por declarações, JavaScript suporta um sistema de tempo de execução baseado em um pequeno número de tipos de dados representando numérico, booleano e string Valores. JavaScript tem um modelo de objeto baseado em protótipo em vez do modelo de objeto mais comum baseado em classe. O modelo baseado em protótipos fornece herança dinâmica; ou seja, o que é herdado pode variar para objetos individuais. JavaScript também suporta funções sem quaisquer requisitos declarativos especiais. Funções podem ser propriedades de objetos, executando como métodos vagamente digitado.
+          Para executar várias declarações, use uma instrução de bloco ({ ... }) para agrupar essas declarações.
         </p>
 
         <p>
-          JavaScript é uma linguagem muito livre em comparação com Java. Você não. tem que declarar todas as variáveis, classes e métodos. Você não tem para se preocupar se os métodos são públicos, privados ou protegido, e você não precisa implementar interfaces. Variáveis parâmetros e tipos de retorno de função não são explicitamente digitados.
+          Exemplo:
         </p>
+
+        <p>
+          O seguinte loop iteriza desde que n seja menor que três:
+        </p>
+
+        <code>var n = 0; var x = 0; while (n < 3) { n++; x += n; }</code>
+
+        <p>
+          A cada iteração, o loop incrementa n e adiciona esse valor a x. Portanto, x e n assumir os seguintes valores:
+        </p>
+
+        <ul>
+          <li>Após a primeira passagem: n = 1 e x = 1</li>
+          <li>Após a segunda passagem: n = 2 e x = 3</li>
+          <li>Após a terceira passagem: n = 3 e x = 6</li>
+        </ul>
+
+        <p>Após completar a terceira passagem, a condição n < 3 não é mais verdade, então o loop termina.</p>
       </article>
     </section>
 
     <section class="main-section" id="Function_declarations">
-      <header>JavaScript e Java</header>
+      <header>Declarações de função</header>
       <article>
         <p>
-          JavaScript e Java são semelhantes em alguns aspectos, mas fundamentalmente diferente em alguns outros. A linguagem JavaScript se assemelha a Java, mas não tem digitação estática de Java e verificação de tipo forte. JavaScript segue a maior parte da sintaxe de expressão Java, nomeando convenções e construções básicas de fluxo de controle, que foi a razão pela qual foi renomeado de LiveScript para JavaScript.
+          Uma definição de função (também chamada de declaração de função ou função instrução) consiste na palavra-chave da função, seguida por:
         </p>
 
-        <p>
-          Em contraste com o sistema de tempo de compilação de Java de classes construídas por declarações, JavaScript suporta um sistema de tempo de execução baseado em um pequeno número de tipos de dados representando numérico, booleano e string Valores. JavaScript tem um modelo de objeto baseado em protótipo em vez do modelo de objeto mais comum baseado em classe. O modelo baseado em protótipos fornece herança dinâmica; ou seja, o que é herdado pode variar para objetos individuais. JavaScript também suporta funções sem quaisquer requisitos declarativos especiais. Funções podem ser propriedades de objetos, executando como métodos vagamente digitado.
-        </p>
+        <ul>
+          <li>O nome da função.</li>
+          <li>Uma lista de argumentos para a função, fechado em parênteses e separados por vírgulas.</li>
+          <li>As instruções JavaScript que definem a função, incluídas em suportes cacheados, { }.</li>
+        </ul>
 
         <p>
-          JavaScript é uma linguagem muito livre em comparação com Java. Você não. tem que declarar todas as variáveis, classes e métodos. Você não tem para se preocupar se os métodos são públicos, privados ou protegido, e você não precisa implementar interfaces. Variáveis parâmetros e tipos de retorno de função não são explicitamente digitados.
+          Por exemplo, o código a seguir define uma função simples chamada quadrado:
+        </p>
+
+        <code>function square(number) { return number * number; }</code>
+
+        <p>
+          O quadrado de função tem um argumento, chamado número. A função consiste em uma declaração que diz para retornar o argumento do função (isto é, número) multiplicada por si mesma. O retorno a instrução especifica o valor devolvido pela função.
+        </p>
+
+        <code>return number * number;</code>
+
+        <p>
+          Parâmetros primitivos (como um número) são passados para funções por valor; o valor é passado para a função, mas se a função altera o valor do parâmetro, essa alteração não se reflete globalmente ou na função de chamada.
         </p>
       </article>
     </section>
 
     <section class="main-section" id="Reference">
-      <header>JavaScript e Java</header>
+      <header>Referência</header>
       <article>
-        <p>
-          JavaScript e Java são semelhantes em alguns aspectos, mas fundamentalmente diferente em alguns outros. A linguagem JavaScript se assemelha a Java, mas não tem digitação estática de Java e verificação de tipo forte. JavaScript segue a maior parte da sintaxe de expressão Java, nomeando convenções e construções básicas de fluxo de controle, que foi a razão pela qual foi renomeado de LiveScript para JavaScript.
-        </p>
-
-        <p>
-          Em contraste com o sistema de tempo de compilação de Java de classes construídas por declarações, JavaScript suporta um sistema de tempo de execução baseado em um pequeno número de tipos de dados representando numérico, booleano e string Valores. JavaScript tem um modelo de objeto baseado em protótipo em vez do modelo de objeto mais comum baseado em classe. O modelo baseado em protótipos fornece herança dinâmica; ou seja, o que é herdado pode variar para objetos individuais. JavaScript também suporta funções sem quaisquer requisitos declarativos especiais. Funções podem ser propriedades de objetos, executando como métodos vagamente digitado.
-        </p>
-
-        <p>
-          JavaScript é uma linguagem muito livre em comparação com Java. Você não. tem que declarar todas as variáveis, classes e métodos. Você não tem para se preocupar se os métodos são públicos, privados ou protegido, e você não precisa implementar interfaces. Variáveis parâmetros e tipos de retorno de função não são explicitamente digitados.
-        </p>
+        <ul>
+          <li>Toda a documentação desta página é retirada do site <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a></li>
+        </ul>
       </article>
     </section>
   </main>
