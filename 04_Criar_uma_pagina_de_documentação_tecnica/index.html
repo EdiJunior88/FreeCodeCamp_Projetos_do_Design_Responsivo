@@ -94,7 +94,7 @@
       </article>
     </section>
 
-    <section class="main-section" id="JavaScript_and_Java">
+    <section class="main-section" id="Hello_world">
       <header>Olá, mundo</header>
       <article>
         <p>
@@ -106,7 +106,143 @@
       </article>
     </section>
 
-    <section class="main-section" id="JavaScript_and_Java">
+    <section class="main-section" id="Variables">
+      <header>Variáveis</header>
+      <article>
+        <p>
+          Você usa variáveis como nomes simbólicos para valores em sua aplicação. Os nomes das variáveis, chamados identificadores, estão de acordo com certas regras.
+        </p>
+
+        <p>
+          Um identificador JavaScript deve começar com uma letra, sublinhar (_) ou sinal de dólar ($); caracteres subsequentes também podem ser dígitos (0-9). Como javaScript é sensível a casos, as letras incluem os caracteres "A" através de "Z" (maiúsculo) e os caracteres "a" através de "z" (minúscula).
+        </p>
+
+        <p>
+          Você pode usar cartas ISO 8859-1 ou Unicode, como å e ü in Identificadores. Você também pode usar as sequências de fuga unicode como caracteres em identificadores. Alguns exemplos de nomes legais são Number_hits, temporário99 e _name.
+        </p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Declaring_variables">
+      <header>Declarando variáveis</header>
+      <article>
+        <p>
+          Você pode declarar uma variável de três maneiras:
+        </p>
+
+        <p>
+          Com a palavra-chave var. Por exemplo, isso a sintaxe pode ser usada para declarar variáveis locais e globais.
+        </p>
+
+        <code>var x = 42.</code>
+
+        <p>
+          Simplesmente atribuindo-lhe um valor. Por exemplo, isso sempre declara uma variável global. Ela gera um aviso JavaScript rigoroso. Você não deveria usar isso. variante.
+        </p>
+
+        <code>x = 42.</code>
+
+        <p>
+          Com a palavra-chave let. Por exemplo, isso a sintaxe pode ser usada para declarar uma variável local de escopo de bloco. Ver Escopo variável abaixo.
+        </p>
+
+        <code>let y = 13.</code>
+      </article>
+    </section>
+
+    <section class="main-section" id="Variable_scope">
+      <header>Escopo variável</header>
+      <article>
+        <p>
+          Quando você declara uma variável fora de qualquer função, ela é chamada de variável global, porque está disponível para qualquer outro código no documento atual. Quando você declara uma variável dentro de uma função, ela é chamada de variável local, porque ela está disponível apenas dentro disso função.
+        </p>
+
+        <p>
+          JavaScript antes do ECMAScript 2015 não tem instrução de bloco âmbito; em vez disso, uma variável declarada dentro de um bloco é local para o função (ou escopo global) que o bloco reside dentro. Durante exemplo, o código a seguir vai registrar 5, porque o escopo de x é o função (ou contexto global) dentro do qual x é declarado, não o bloco, que neste caso é uma declaração if.
+        </p>
+
+        <code>if (true) { var x = 5; } console.log(x); // 5</code>
+
+        <p>
+          Esse comportamento muda, ao usar a declaração de let introduzida em ECMAScript 2015.
+        </p>
+
+        <code>if (true) { let y = 5; } console.log(y); // ReferenceError: y is
+          not defined</code>
+      </article>
+    </section>
+
+    <section class="main-section" id="Global_variables">
+      <header>Variáveis globais</header>
+      <article>
+        <p>
+          Variáveis globais são de fato propriedades do objeto global. Na web páginas o objeto global é janela, para que você possa definir e acessar global variáveis usando a sintaxe de variável.
+        </p>
+
+        <p>
+          Consequentemente, você pode acessar variáveis globais declaradas em uma janela ou quadro de outra janela ou quadro especificando a janela ou nome da moldura. Por exemplo, se uma variável chamada phoneNumber for declarado em um documento, você pode se referir a esta variável de um iframe como pai.phoneNumber.
+        </p>
+      </article>
+    </section>
+
+    <section class="main-section" id="Constants">
+      <header>Constantes</header>
+      <article>
+        <p>
+          Você pode criar uma constante somente leitura, nomeada com a palavra-chave const. A sintaxe de um identificador constante é a mesma de uma variável identificador: ele deve começar com uma carta, sublinhar ou sinal de dólar e pode conter caracteres alfabéticos, numéricos ou sublinhados.
+        </p>
+
+        <code>const PI = 3.14;</code>
+
+        <p>
+          Uma constante não pode alterar o valor através da atribuição ou ser redeclarada enquanto o script está sendo executado. Tem que ser inicializado para um valor.
+        </p>
+
+        <p>
+          As regras de escopo para constantes são as mesmas que as de bloco de deixar variáveis de escopo. Se a palavra-chave const for omitida, o identificador será assumido para representar uma variável.
+        </p>
+
+        <p>
+          Você não pode declarar uma constante com o mesmo nome como uma função ou variável no mesmo escopo. Por exemplo:
+        </p>
+
+        <code>// THIS WILL CAUSE AN ERROR function f() {}; const f = 5; // THIS
+          WILL CAUSE AN ERROR ALSO function f() { const g = 5; var g;
+          //statements }</code>
+
+        <p>
+          No entanto, os atributos do objeto não são protegidos, portanto, os seguintes declaração é executada sem problemas.
+        </p>
+
+        <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
+          "otherValue";</code>
+      </article>
+    </section>
+
+    <section class="main-section" id="Data_types">
+      <header>Tipos de dados</header>
+      <article>
+        <p>
+          O mais recente padrão ECMAScript define sete tipos de dados:
+        </p>
+
+        <ul>
+          <li>Seis tipos de dados que são primitivos:</li>
+          <ul>
+            <li>Booleano. verdadeiro e falso.</li>
+            <li>zero. Uma palavra-chave especial denotando um valor nulo. Porque JavaScript é sensível a maiúsculas, nulo não é o mesmo que Nulo, NULO, ou qualquer outra variante.</li>
+            <li>indefinido. Uma propriedade de alto nível cujo valor é indefinido.</li>
+            <li>Número. 42 ou 3,14159.</li>
+            <li>Corda. "Howdy"</li>
+            <li>Símbolo (novo no ECMAScript 2015). Um tipo de dados cujas instâncias são únicos e imutáveis.</li>
+          </ul>
+
+          <li>e Objeto</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="main-section" id="if...else_statement">
       <header>JavaScript e Java</header>
       <article>
         <p>
@@ -123,7 +259,7 @@
       </article>
     </section>
 
-    <section class="main-section" id="JavaScript_and_Java">
+    <section class="main-section" id="while_statement">
       <header>JavaScript e Java</header>
       <article>
         <p>
@@ -140,7 +276,7 @@
       </article>
     </section>
 
-    <section class="main-section" id="JavaScript_and_Java">
+    <section class="main-section" id="Function_declarations">
       <header>JavaScript e Java</header>
       <article>
         <p>
@@ -157,109 +293,7 @@
       </article>
     </section>
 
-    <section class="main-section" id="JavaScript_and_Java">
-      <header>JavaScript e Java</header>
-      <article>
-        <p>
-          JavaScript e Java são semelhantes em alguns aspectos, mas fundamentalmente diferente em alguns outros. A linguagem JavaScript se assemelha a Java, mas não tem digitação estática de Java e verificação de tipo forte. JavaScript segue a maior parte da sintaxe de expressão Java, nomeando convenções e construções básicas de fluxo de controle, que foi a razão pela qual foi renomeado de LiveScript para JavaScript.
-        </p>
-
-        <p>
-          Em contraste com o sistema de tempo de compilação de Java de classes construídas por declarações, JavaScript suporta um sistema de tempo de execução baseado em um pequeno número de tipos de dados representando numérico, booleano e string Valores. JavaScript tem um modelo de objeto baseado em protótipo em vez do modelo de objeto mais comum baseado em classe. O modelo baseado em protótipos fornece herança dinâmica; ou seja, o que é herdado pode variar para objetos individuais. JavaScript também suporta funções sem quaisquer requisitos declarativos especiais. Funções podem ser propriedades de objetos, executando como métodos vagamente digitado.
-        </p>
-
-        <p>
-          JavaScript é uma linguagem muito livre em comparação com Java. Você não. tem que declarar todas as variáveis, classes e métodos. Você não tem para se preocupar se os métodos são públicos, privados ou protegido, e você não precisa implementar interfaces. Variáveis parâmetros e tipos de retorno de função não são explicitamente digitados.
-        </p>
-      </article>
-    </section>
-
-    <section class="main-section" id="JavaScript_and_Java">
-      <header>JavaScript e Java</header>
-      <article>
-        <p>
-          JavaScript e Java são semelhantes em alguns aspectos, mas fundamentalmente diferente em alguns outros. A linguagem JavaScript se assemelha a Java, mas não tem digitação estática de Java e verificação de tipo forte. JavaScript segue a maior parte da sintaxe de expressão Java, nomeando convenções e construções básicas de fluxo de controle, que foi a razão pela qual foi renomeado de LiveScript para JavaScript.
-        </p>
-
-        <p>
-          Em contraste com o sistema de tempo de compilação de Java de classes construídas por declarações, JavaScript suporta um sistema de tempo de execução baseado em um pequeno número de tipos de dados representando numérico, booleano e string Valores. JavaScript tem um modelo de objeto baseado em protótipo em vez do modelo de objeto mais comum baseado em classe. O modelo baseado em protótipos fornece herança dinâmica; ou seja, o que é herdado pode variar para objetos individuais. JavaScript também suporta funções sem quaisquer requisitos declarativos especiais. Funções podem ser propriedades de objetos, executando como métodos vagamente digitado.
-        </p>
-
-        <p>
-          JavaScript é uma linguagem muito livre em comparação com Java. Você não. tem que declarar todas as variáveis, classes e métodos. Você não tem para se preocupar se os métodos são públicos, privados ou protegido, e você não precisa implementar interfaces. Variáveis parâmetros e tipos de retorno de função não são explicitamente digitados.
-        </p>
-      </article>
-    </section>
-
-    <section class="main-section" id="JavaScript_and_Java">
-      <header>JavaScript e Java</header>
-      <article>
-        <p>
-          JavaScript e Java são semelhantes em alguns aspectos, mas fundamentalmente diferente em alguns outros. A linguagem JavaScript se assemelha a Java, mas não tem digitação estática de Java e verificação de tipo forte. JavaScript segue a maior parte da sintaxe de expressão Java, nomeando convenções e construções básicas de fluxo de controle, que foi a razão pela qual foi renomeado de LiveScript para JavaScript.
-        </p>
-
-        <p>
-          Em contraste com o sistema de tempo de compilação de Java de classes construídas por declarações, JavaScript suporta um sistema de tempo de execução baseado em um pequeno número de tipos de dados representando numérico, booleano e string Valores. JavaScript tem um modelo de objeto baseado em protótipo em vez do modelo de objeto mais comum baseado em classe. O modelo baseado em protótipos fornece herança dinâmica; ou seja, o que é herdado pode variar para objetos individuais. JavaScript também suporta funções sem quaisquer requisitos declarativos especiais. Funções podem ser propriedades de objetos, executando como métodos vagamente digitado.
-        </p>
-
-        <p>
-          JavaScript é uma linguagem muito livre em comparação com Java. Você não. tem que declarar todas as variáveis, classes e métodos. Você não tem para se preocupar se os métodos são públicos, privados ou protegido, e você não precisa implementar interfaces. Variáveis parâmetros e tipos de retorno de função não são explicitamente digitados.
-        </p>
-      </article>
-    </section>
-
-    <section class="main-section" id="JavaScript_and_Java">
-      <header>JavaScript e Java</header>
-      <article>
-        <p>
-          JavaScript e Java são semelhantes em alguns aspectos, mas fundamentalmente diferente em alguns outros. A linguagem JavaScript se assemelha a Java, mas não tem digitação estática de Java e verificação de tipo forte. JavaScript segue a maior parte da sintaxe de expressão Java, nomeando convenções e construções básicas de fluxo de controle, que foi a razão pela qual foi renomeado de LiveScript para JavaScript.
-        </p>
-
-        <p>
-          Em contraste com o sistema de tempo de compilação de Java de classes construídas por declarações, JavaScript suporta um sistema de tempo de execução baseado em um pequeno número de tipos de dados representando numérico, booleano e string Valores. JavaScript tem um modelo de objeto baseado em protótipo em vez do modelo de objeto mais comum baseado em classe. O modelo baseado em protótipos fornece herança dinâmica; ou seja, o que é herdado pode variar para objetos individuais. JavaScript também suporta funções sem quaisquer requisitos declarativos especiais. Funções podem ser propriedades de objetos, executando como métodos vagamente digitado.
-        </p>
-
-        <p>
-          JavaScript é uma linguagem muito livre em comparação com Java. Você não. tem que declarar todas as variáveis, classes e métodos. Você não tem para se preocupar se os métodos são públicos, privados ou protegido, e você não precisa implementar interfaces. Variáveis parâmetros e tipos de retorno de função não são explicitamente digitados.
-        </p>
-      </article>
-    </section>
-
-    <section class="main-section" id="JavaScript_and_Java">
-      <header>JavaScript e Java</header>
-      <article>
-        <p>
-          JavaScript e Java são semelhantes em alguns aspectos, mas fundamentalmente diferente em alguns outros. A linguagem JavaScript se assemelha a Java, mas não tem digitação estática de Java e verificação de tipo forte. JavaScript segue a maior parte da sintaxe de expressão Java, nomeando convenções e construções básicas de fluxo de controle, que foi a razão pela qual foi renomeado de LiveScript para JavaScript.
-        </p>
-
-        <p>
-          Em contraste com o sistema de tempo de compilação de Java de classes construídas por declarações, JavaScript suporta um sistema de tempo de execução baseado em um pequeno número de tipos de dados representando numérico, booleano e string Valores. JavaScript tem um modelo de objeto baseado em protótipo em vez do modelo de objeto mais comum baseado em classe. O modelo baseado em protótipos fornece herança dinâmica; ou seja, o que é herdado pode variar para objetos individuais. JavaScript também suporta funções sem quaisquer requisitos declarativos especiais. Funções podem ser propriedades de objetos, executando como métodos vagamente digitado.
-        </p>
-
-        <p>
-          JavaScript é uma linguagem muito livre em comparação com Java. Você não. tem que declarar todas as variáveis, classes e métodos. Você não tem para se preocupar se os métodos são públicos, privados ou protegido, e você não precisa implementar interfaces. Variáveis parâmetros e tipos de retorno de função não são explicitamente digitados.
-        </p>
-      </article>
-    </section>
-
-    <section class="main-section" id="JavaScript_and_Java">
-      <header>JavaScript e Java</header>
-      <article>
-        <p>
-          JavaScript e Java são semelhantes em alguns aspectos, mas fundamentalmente diferente em alguns outros. A linguagem JavaScript se assemelha a Java, mas não tem digitação estática de Java e verificação de tipo forte. JavaScript segue a maior parte da sintaxe de expressão Java, nomeando convenções e construções básicas de fluxo de controle, que foi a razão pela qual foi renomeado de LiveScript para JavaScript.
-        </p>
-
-        <p>
-          Em contraste com o sistema de tempo de compilação de Java de classes construídas por declarações, JavaScript suporta um sistema de tempo de execução baseado em um pequeno número de tipos de dados representando numérico, booleano e string Valores. JavaScript tem um modelo de objeto baseado em protótipo em vez do modelo de objeto mais comum baseado em classe. O modelo baseado em protótipos fornece herança dinâmica; ou seja, o que é herdado pode variar para objetos individuais. JavaScript também suporta funções sem quaisquer requisitos declarativos especiais. Funções podem ser propriedades de objetos, executando como métodos vagamente digitado.
-        </p>
-
-        <p>
-          JavaScript é uma linguagem muito livre em comparação com Java. Você não. tem que declarar todas as variáveis, classes e métodos. Você não tem para se preocupar se os métodos são públicos, privados ou protegido, e você não precisa implementar interfaces. Variáveis parâmetros e tipos de retorno de função não são explicitamente digitados.
-        </p>
-      </article>
-    </section>
-
-    <section class="main-section" id="JavaScript_and_Java">
+    <section class="main-section" id="Reference">
       <header>JavaScript e Java</header>
       <article>
         <p>

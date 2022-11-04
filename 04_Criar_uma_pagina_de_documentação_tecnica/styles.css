@@ -77,20 +77,22 @@ body {
   padding-top: 30px;
 }
 
+#Data_types > article > ul > ul > li {
+  margin-left: 130px;
+  padding: 9px 0 9px 0;
+}
+
 article {
   width: 95%;
 }
 
 .main-section > article > p {
   padding: 9px 0 9px 20px;
-  color: blue;
 }
 
 .main-section > article > ul > li {
   padding: 9px 0 9px 0;
-  color: red;
   margin-left: 80px;
-  font-size: 0.95em;
   text-align: justify;
 }
 
@@ -100,6 +102,10 @@ p {
   text-align: justify;
 }
 
+ul {
+  font-size: 0.95em;
+}
+
 code {
   display: block;
   text-align: left;
@@ -107,7 +113,7 @@ code {
   background: #f0efef;
   line-height: 2em;
   font-size: 0.8em;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 10px 20px;
   margin: 10px 20px;
   color: #414141;
