@@ -6,35 +6,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>JS Documentação</title>
+  <title>Documentação JavaScript</title>
 </head>
 
 <body>
   <nav id="navbar">
-    <header>
-      JS Documentação
-    </header>
+    <header>Documentação JavaScript</header>
 
     <ul>
-      <li><a href="#introduction" class="nav-link">Introdução</a></li>
-      <li><a href="#What_you_should_already_know" class="nav-link">O que você já deve saber</a></li>
-      <li><a href="#JavaScript_and_Java" class="nav-link">JavaScript e Java</a></li>
-      <li><a href="#Hello_world" class="nav-link">Olá, mundo</a></li>
-      <li><a href="#Variables" class="nav-link">Variáveis</a></li>
-      <li><a href="#Declaring_variables" class="nav-link">Declarando variáveis</a></li>
-      <li><a href="#Variable_scope" class="nav-link">Escopo variável</a></li>
-      <li><a href="#Global_variables" class="nav-link">Variáveis globais</a></li>
-      <li><a href="#Constants" class="nav-link">Constantes</a></li>
-      <li><a href="#Data_types" class="nav-link">Tipos de dados</a></li>
-      <li><a href="#if...else_statement" class="nav-link">se... outra declaração</a></li>
-      <li><a href="#while_statement" class="nav-link">enquanto... como declaração</a></li>
-      <li><a href="#Function_declarations" class="nav-link">Declarações de função</a></li>
-      <li><a href="#Reference" class="nav-link">Referência</a></li>
+      <li><a class="nav-link" href="#Introduction">Introdução</a></li>
+      <li>
+        <a class="nav-link" href="#What_you_should_already_know">O que você já deve saber</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#JavaScript_and_Java">JavaScript e Java</a>
+      </li>
+      <li><a class="nav-link" href="#Hello_world">Olá Mundo</a></li>
+      <li><a class="nav-link" href="#Variables">Variáveis</a></li>
+      <li>
+        <a class="nav-link" href="#Declaring_variables">Declarando variáveis</a>
+      </li>
+      <li><a class="nav-link" href="#Variable_scope">Escopo variável</a></li>
+      <li>
+        <a class="nav-link" href="#Global_variables">Variáveis globais</a>
+      </li>
+      <li><a class="nav-link" href="#Constants">Constantes</a></li>
+      <li><a class="nav-link" href="#Data_types">Tipos de dados</a></li>
+      <li>
+        <a class="nav-link" href="#if...else_statement">if...else declaração</a>
+      </li>
+      <li><a class="nav-link" href="#while_statement">while... declaração</a></li>
+      <li>
+        <a class="nav-link" href="#Function_declarations">Declarações de função</a>
+      </li>
+      <li><a class="nav-link" href="#Reference">Referência</a></li>
     </ul>
   </nav>
 
   <main id="main-doc">
-    <section class="main-section" id="introduction">
+    <section class="main-section" id="Introduction">
       <header>Introdução</header>
       <article>
         <p>
@@ -44,7 +54,6 @@
         <p>
           JavaScript contém uma biblioteca padrão de objetos, como Array, Data, e Matemática, e um conjunto central de elementos linguísticos, como operadores, estruturas de controle e declarações. Núcleo JavaScript pode ser estendido para uma variedade de propósitos, complementando-o com objetos adicionais; por exemplo:
         </p>
-
         <ul>
           <li>
             JavaScript do lado do cliente estende o idioma principal fornecendo objetos para controlar um navegador e seu Modelo de Objeto de Documento (DOM). Por exemplo, extensões do lado do cliente permitem que um aplicativo coloque elementos em um formulário HTML e responder a eventos do usuário, como mouse cliques, entrada de formulário e navegação de página.
@@ -59,17 +68,13 @@
     <section class="main-section" id="What_you_should_already_know">
       <header>O que você já deve saber</header>
       <article>
-        <p>
-          Este guia pressupõe que você tenha o seguinte plano de fundo básico:
-        </p>
+        <p>Este guia pressupõe que você tenha o seguinte plano de fundo básico:</p>
 
         <ul>
           <li>
             Um entendimento geral da Internet e da World Wide Web (WWW).
           </li>
-          <li>
-            Bom conhecimento de trabalho da HyperText Markup Language (HTML).
-          </li>
+          <li>Bom conhecimento de trabalho da HyperText Markup Language (HTML).</li>
           <li>
             Alguma experiência de programação. Se você é novo na programação, tente um dos tutoriais ligados na página principal sobre JavaScript.
           </li>
@@ -97,12 +102,11 @@
     <section class="main-section" id="Hello_world">
       <header>Olá, mundo</header>
       <article>
-        <p>
-          Para começar com a escrita JavaScript, abra o Scratchpad e escreva seu primeiro código JavaScript "Hello world":Selecione o código no pad e aperte Ctrl+R para vê-lo se desdobrar em seu Navegador!
-        </p>
+        <p>Para começar com a escrita JavaScript, abra o Scratchpad e escreva seu primeiro código JavaScript "Hello world":Selecione o código no pad e aperte Ctrl+R para vê-lo se desdobrar em seu Navegador!</p>
 
         <code>function greetMe(yourName) { alert("Hello " + yourName); }
-          greetMe("World");</code>
+          greetMe("World");
+        </code>
       </article>
     </section>
 
@@ -211,7 +215,7 @@
           //statements }</code>
 
         <p>
-          No entanto, os atributos do objeto não são protegidos, portanto, os seguintes declaração é executada sem problemas.
+          No entanto, os atributos do objeto não são protegidos, portanto, os seguintes declaração é executada sem problemas
         </p>
 
         <code>const MY_OBJECT = {"key": "value"}; MY_OBJECT.key =
@@ -227,23 +231,43 @@
         </p>
 
         <ul>
-          <li>Seis tipos de dados que são primitivos:</li>
+          <li>
+            Seis tipos de dados que são primitivos:
+          </li>
           <ul>
-            <li>Booleano. verdadeiro e falso.</li>
-            <li>zero. Uma palavra-chave especial denotando um valor nulo. Porque JavaScript é sensível a maiúsculas, nulo não é o mesmo que Nulo, NULO, ou qualquer outra variante.</li>
-            <li>indefinido. Uma propriedade de alto nível cujo valor é indefinido.</li>
-            <li>Número. 42 ou 3,14159.</li>
-            <li>Corda. "Howdy"</li>
-            <li>Símbolo (novo no ECMAScript 2015). Um tipo de dados cujas instâncias são únicos e imutáveis.</li>
+            <li>
+              Booleano. verdadeiro e falso.
+            </li>
+            <li>
+              zero. Uma palavra-chave especial denotando um valor nulo. Porque JavaScript é sensível a maiúsculas, nulo não é o mesmo que Nulo, NULO, ou qualquer outra variante
+            </li>
+            <li>
+              indefinido. Uma propriedade de alto nível cujo valor é indefinido.
+            </li>
+            <li>
+              Número. 42 ou 3,14159.
+            </li>
+            <li>
+              String. "Howdy"
+            </li>
+            <li>
+              Símbolo (novo no ECMAScript 2015). Um tipo de dados cujas instâncias são únicos e imutáveis.
+            </li>
           </ul>
-
-          <li>e Objeto</li>
+          </li>
+          <li>
+            e Object
+          </li>
         </ul>
+
+        <p>
+          Embora esses tipos de dados sejam uma quantidade relativamente pequena, eles permitem você para executar funções úteis com seus aplicativos. Objetos e funções são os outros elementos fundamentais na linguagem. É possível pensar em objetos como recipientes nomeados para valores, e funciona como procedimentos que sua aplicação pode realizar.
+        </p>
       </article>
     </section>
 
     <section class="main-section" id="if...else_statement">
-      <header>se... outra declaração</header>
+      <header>if...else declaração</header>
       <article>
         <p>
           Use a instrução if para executar uma declaração se uma condição lógica for verdadeiro. Use a cláusula opcional para executar uma declaração se o condição é falsa. Uma declaração se parece da seguinte forma:condição pode ser qualquer expressão que avalia para verdadeiro ou falso. Ver Booleano para uma explicação do que avalia a verdade e falso. Se condição avalia a verdade, statement_1 é executado; caso contrário statement_2 é executado. statement_1 e statement_2 podem ser qualquer declaração, incluindo mais aninhado se declarações.
@@ -257,7 +281,8 @@
 
         <code>if (condition_1) { statement_1; } else if (condition_2) {
           statement_2; } else if (condition_n) { statement_n; } else {
-          statement_last; }</code>
+          statement_last; }
+        </code>
 
         <p>
           No caso de múltiplas condições apenas a primeira condição lógica que avalia a verdade será executado. Para executar múltiplos declarações, agrupa-as dentro de uma declaração de bloco ({ ... } ) . Em geral, é uma boa prática sempre usar declarações de bloco, especialmente ao aninhar se declarações:É aconselhável não usar atribuições simples em um condicional expressão, porque a atribuição pode ser confundida com igualdade quando olhando sobre o código. Por exemplo, não use o seguinte código:Se você precisar usar uma atribuição em uma expressão condicional, uma prática comum é colocar parênteses adicionais em torno da tarefa. Por exemplo:
@@ -275,7 +300,7 @@
     </section>
 
     <section class="main-section" id="while_statement">
-      <header>enquanto... como declaração</header>
+      <header>while... declaração</header>
       <article>
         <p>
           Uma declaração de while executa suas declarações, desde que uma especificada condição avalia a verdade. Uma declaração de enquanto parece o seguinte:Se a condição se torna falso, declaração dentro do loop pára de executar e controlar passes para a declaração após o loop.
@@ -299,7 +324,7 @@
           O seguinte loop iteriza desde que n seja menor que três:
         </p>
 
-        <code>var n = 0; var x = 0; while (n < 3) { n++; x += n; }</code>
+        <code>var n = 0; var x = 0; while (n &lt 3) { n++; x += n; }</code>
 
         <p>
           A cada iteração, o loop incrementa n e adiciona esse valor a x. Portanto, x e n assumir os seguintes valores:
@@ -311,10 +336,11 @@
           <li>Após a terceira passagem: n = 3 e x = 6</li>
         </ul>
 
-        <p>Após completar a terceira passagem, a condição n < 3 não é mais verdade, então o loop termina.</p>
+        <p>
+          Após completar a terceira passagem, a condição n &lt 3 não é mais verdade, então o loop termina.
+        </p>
       </article>
     </section>
-
     <section class="main-section" id="Function_declarations">
       <header>Declarações de função</header>
       <article>
@@ -323,9 +349,15 @@
         </p>
 
         <ul>
-          <li>O nome da função.</li>
-          <li>Uma lista de argumentos para a função, fechado em parênteses e separados por vírgulas.</li>
-          <li>As instruções JavaScript que definem a função, incluídas em suportes cacheados, { }.</li>
+          <li>
+            O nome da função.
+          </li>
+          <li>
+            Uma lista de argumentos para a função, fechado em parênteses e separados por vírgulas.
+          </li>
+          <li>
+            As instruções JavaScript que definem a função, incluídas em suportes cacheados, { }.
+          </li>
         </ul>
 
         <p>
@@ -350,7 +382,9 @@
       <header>Referência</header>
       <article>
         <ul>
-          <li>Toda a documentação desta página é retirada do site <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a></li>
+          <li>
+            Toda a documentação desta página é retirada do site <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" target="_blank">MDN</a>
+          </li>
         </ul>
       </article>
     </section>

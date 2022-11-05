@@ -29,8 +29,6 @@ body {
   width: 300px;
   top: 0;
   bottom: 0;
-  /*   overflow-y: auto;
-  overflow-x: hidden; */
 }
 
 #navbar > header {
@@ -40,6 +38,7 @@ body {
   padding: 20px;
   border: 1px solid #000;
   border-width: 0 0 1px 0;
+  text-align: center;
 }
 
 #navbar > ul {
@@ -67,15 +66,16 @@ body {
   margin-bottom: 110px;
 }
 
+.main-section:nth-child(1) {
+  margin-top: 30px;
+}
+
 .main-section > header {
   font-size: 1.6em;
   font-weight: 500;
   padding: 10px 0;
 }
 
-#introduction > header {
-  padding-top: 30px;
-}
 
 #Data_types > article > ul > ul > li {
   margin-left: 130px;
@@ -144,9 +144,14 @@ code {
     border: 1px solid #000;
   }
 
+  .main-section > header {
+    margin-top: 0;
+  }
+  
+
   #main-doc {
     position: relative;
-    margin-top: 250px;
+    margin-top: 300px;
     margin-left: 30px;
   }
 }
