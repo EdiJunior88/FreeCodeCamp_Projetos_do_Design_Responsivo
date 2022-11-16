@@ -9,29 +9,40 @@
   scroll-behavior: smooth;
 }
 
-#container-header {
+#navbar {
   display: flex;
   justify-content: flex-end;
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   background: #be3144;
-  padding: 20px 24px 20px 0;
   -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.39);
   -moz-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.39);
   box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.39);
-  z-index: 999;
+  z-index: 10;
 }
 
-#container-header ul {
+#navbar ul {
   display: flex;
   list-style: none;
+  margin-right: 20px;
 }
 
-#container-header li a {
-  padding: 0 15px;
+#navbar a {
+  display: block;
+  padding: 20px;
   text-decoration: none;
   font-size: 1.3em;
   font-weight: 500;
+}
+
+#navbar li {
+  transition: 0.6s ease;
+}
+
+#navbar li:hover {
+  background: #4b6392;
 }
 
 #container-section {
@@ -91,19 +102,23 @@
   padding-bottom: 17vh;
 }
 
-.project-view {
+.project-tile {
   width: 440px;
   height: 100%;
   padding: 0 18px;
 }
 
-.project-view img {
+.project-tile a {
+  text-decoration: none;
+}
+
+.project-tile img {
   width: 100%;
   height: 406px;
   object-fit: cover;
 }
 
-.project-view p {
+.project-tile p {
   padding: 24px 0;
   margin-top: -4px;
   font-size: 1.2em;
@@ -156,7 +171,7 @@
   font-size: 1.3em;
 }
 
-.footer-social-media a {
+.footer-social-media #profile-link {
   text-decoration: none;
   font-size: 1.5em;
   font-weight: 500;
@@ -174,11 +189,11 @@
 
 /* ------- Media Querie ------- */
 @media (max-width: 900px) {
-  .project-view {
+  .project-tile {
     width: 50%;
   }
 
-  .project-view img {
+  .project-tile img {
     width: 100%;
     height: 229px;
     object-fit: cover;
@@ -186,11 +201,11 @@
 }
 
 @media (max-width: 700px) {
-  .project-view {
+  .project-tile {
     width: 80%;
   }
 
-  .project-view img {
+  .project-tile img {
     width: 100%;
     height: 336px;
     object-fit: cover;
@@ -198,7 +213,7 @@
 }
 
 @media (max-width: 620px) {
-  .project-view {
+  .project-tile {
     width: 441px;
   }
 
@@ -216,7 +231,7 @@
     padding-left: 40px;
   }
 
-  .footer-social-media a {
+  .footer-social-media #profile-link {
     font-size: 1.5em;
     font-weight: 400;
   }
