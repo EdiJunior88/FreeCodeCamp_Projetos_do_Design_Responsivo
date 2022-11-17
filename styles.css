@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #be3144;
+  -webkit-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: 0px 2px 0px 0px rgba(0, 0, 0, 0.39);
+  z-index: 10;
+}
+
+#navbar ul {
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
+}
+
+#navbar a {
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+#navbar li {
+  transition: 0.6s ease;
+}
+
+#navbar li:hover {
+  background: #4b6392;
+}
+
+#container-section {
+  position: relative;
+  height: 100%;
+  padding-top: 50vh;
+  text-align: center;
+  background: rgb(31, 31, 31);
+  background: linear-gradient(
+    250deg,
+    rgba(31, 31, 31, 1) 0%,
+    rgba(60, 60, 60, 1) 100%
+  );
+}
+
+#welcome-section {
+  height: 50vh;
+}
+
+#welcome-section h1 {
+  font-size: 3.2em;
+  font-weight: 700;
+}
+
+#welcome-section p {
+  color: #be3144;
+  font-size: 1.7em;
+  font-style: italic;
+  font-weight: 300;
+  padding-top: 10px;
+}
+
+#projects {
+  background: #5874a8c4;
+  width: 100%;
+  padding-top: 17vh;
+}
+
+.project-title {
+  padding-bottom: 9vh;
+  font-size: 1.9em;
+}
+
+.project-title h1 {
+  max-width: 673px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #fff;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 36px;
+  padding-bottom: 17vh;
+}
+
+.project-tile {
+  width: 440px;
+  height: 100%;
+  padding: 0 18px;
+}
+
+.project-tile p {
+  cursor: pointer;
+}
+
+.project-tile a {
+  text-decoration: none;
+}
+
+.code {
+  color: #21262e00;
+  transition: color 0.3s ease-out;
+}
+
+.project-tile:hover .code {
+  color: #d42a41;
+  font-weight: bolder;
+  padding: 0 5px;
+}
+
+.project-tile img {
+  width: 100%;
+  height: 406px;
+  object-fit: cover;
+}
+
+.project-tile p {
+  padding: 24px 0;
+  margin-top: -4px;
+  font-size: 1.2em;
+  font-weight: 500;
+  background: #21262e9c;
+}
+
+#container-footer {
+  width: 100%;
+  padding-top: 20vh;
+  background: #0b172ad4;
+}
+
+.footer-description {
+  text-align: center;
+  padding-bottom: calc(30vh - 6vh);
+  border-bottom: 4px solid #be3144;
+}
+
+.footer-description h1 {
+  font-size: 3.2em;
+}
+
+.footer-description p {
+  font-size: 1.1em;
+  font-weight: 300;
+  font-style: italic;
+  padding-top: 2vh;
+}
+
+.footer-social-media {
+  width: 100%;
+  padding-top: 9vh;
+}
+
+.footer-social-media ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  gap: 2rem;
+}
+
+.footer-social-media li {
+  list-style: none;
+  text-shadow: 2px 2px 1px #1f1f1f;
+}
+
+.fa-brands::before {
+  font-size: 1.2em;
+}
+
+.footer-social-media #profile-link {
+  width: auto;
+  text-decoration: none;
+  font-size: 1.5em;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-social-media #profile-link:hover {
+  font-size: 1.65em;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 100px;
+  padding: 6vh 35px;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+/* ------- Media Querie ------- */
+@media (max-width: 900px) {
+  .project-tile {
+    width: 50%;
+  }
+
+  .project-tile img {
+    width: 100%;
+    height: 229px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 700px) {
+  .project-tile {
+    width: 80%;
+  }
+
+  .project-tile img {
+    width: 100%;
+    height: 336px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 620px) {
+  .project-tile {
+    width: 441px;
+  }
+
+  .project-title h1 {
+    max-width: 419px;
+    font-size: 1.5em;
+  }
+
+  .footer-description h1 {
+    font-size: 2.5em;
+  }
+
+  .footer-description > h1 > p {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .footer-social-media #profile-link {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+
+  .footer-copyright {
+    font-size: 0.9em;
+  }
+}
