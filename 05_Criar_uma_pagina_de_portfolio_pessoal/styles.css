@@ -108,8 +108,23 @@
   padding: 0 18px;
 }
 
+.project-tile p {
+  cursor: pointer;
+}
+
 .project-tile a {
   text-decoration: none;
+}
+
+.code {
+  color: #21262e00;
+  transition: color 0.3s ease-out;
+}
+
+.project-tile:hover .code {
+  color: #d42a41;
+  font-weight: bolder;
+  padding: 0 5px;
 }
 
 .project-tile img {
@@ -158,7 +173,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   gap: 2rem;
 }
 
@@ -168,13 +183,19 @@
 }
 
 .fa-brands::before {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .footer-social-media #profile-link {
+  width: auto;
   text-decoration: none;
   font-size: 1.5em;
   font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-social-media #profile-link:hover {
+  font-size: 1.65em;
 }
 
 .footer-copyright {
