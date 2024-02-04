@@ -7,6 +7,12 @@
 
 <hr>
 
+<h3>Tecnologias Utilizadas</h3>
+
+Para ver todas as tecnologias [clique aqui](/techstack.md)
+
+<hr>
+
 <ul>
   <li>Criar uma página de homenagem</li>
   <li>Criar um formulário de pesquisa</li>
