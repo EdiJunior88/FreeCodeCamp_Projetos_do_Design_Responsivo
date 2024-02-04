@@ -26,8 +26,8 @@ Para ver todas as tecnologias [clique aqui](/techstack.md)
 <h3>Tempo Estudando o Projeto</h3>
 
 <p>
-  <a href="https://wakatime.com/badge/github/EdiJunior88/FreeCodeCamp_Projetos_do_Design_Responsivo">
-    <img src="https://wakatime.com/badge/github/EdiJunior88/FreeCodeCamp_Projetos_do_Design_Responsivo.svg" alt="wakatime">
+  <a href="https://wakatime.com/badge/user/e7b8ca2e-291c-4eca-846b-95eced7beff1/project/a34565ab-3da0-411f-8840-7e1ca69a6ccf">
+    <img src="https://wakatime.com/badge/user/e7b8ca2e-291c-4eca-846b-95eced7beff1/project/a34565ab-3da0-411f-8840-7e1ca69a6ccf.svg" alt="wakatime">
   </a>
 </p>
 
